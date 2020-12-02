@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Kenneth Cortés </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1> Kenneth Cortés Aguas </h1>
+        <h2> Software Developer / Data Scientist / Economist </h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/kenneth-ca/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/Kenneth_ca7" target="_blank"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://github.com/Kenneth-ca" target="_blank"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://medium.com/@kenneth.ca95" target="_blank"><i class="fab fa-medium"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2> Bogota real estate price prediction </h2>
+            <p>
+                This was a project presented to the cadastral unit of Bogota (UAECD) during the DS4A program of data science. We presented an application that modeled the price of properties in Bogota and showed analytics of the city.
+            </p>
+            <a href="https://drive.google.com/file/d/1SCXDsIVzD8zUyQkpR9oOLkZGhjTLwTpa/view?usp=sharing">
+                <img class="img_work" alt="ds4a_catastro" src="pics/ds4a_catastro.png" height="300px">
+            </a>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i> CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Flask</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Dash</div>
+                <div><i class="fas fa-circle"></i> AWS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Postgres</div>
+            </div>
+            <!--
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+            -->
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Software Developer with background in Economics and Data Science. Driven by intellectual curiosity, highly adaptable and flexible, enjoys collaborative working and problem solving.
+                </p>
+                <p>
+                    I have proficiency in Python using libraries like Tensorflow, Keras, Scikit-learn, Pandas, Numpy, Matplotlib and Seaborn. I recently finished a program in Data Science in which I worked together with a team in a project on valuation of properties in Bogotá.
+                </p>
+                <p>
+                    I come from San Andrés, an island situated in the colombian caribbean where my family has a touristic business. I moved to Bogotá for my studies in Economics thanks to an Scholarship given by the university. I was a student representative of the program and graduated with a thesis about rent-seeking and pressure groups. Later on I got interested in the Holberton’s Machine Learning program and started learning software development from the basics.
+                </p>
+            </section>
+            <a href="https://drive.google.com/file/d/1xoAhoH0RS7v1TmBNrEAqxxe7VWbH1alP/view?usp=sharing" target="_blank">
+                <p>
+                    my resume.
+                </p>
+            </a>
+            <section>
+                <h2> Interests </h2>
+                <p>
+                    I like reading classic books, listening to experimental and progressive rock, play tennis and now I'm learning how to play the guitar.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form action="mailto:kenneth.ca95@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
